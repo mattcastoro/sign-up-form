@@ -20,16 +20,42 @@ body {
     align-items: left;
 }
 
-.image {
+.bg-image-container {
     width: 1000px;
     height: 10000px;
     overflow: hidden;
+    position: relative;
+}
+
+.brand-container {
+    position: absolute;
+    top: 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    background-color: #dff4ff6f;
+}
+
+.brand-name {
+    font-family: "bebas_neueregular";
+    font-size: 75px;
+    padding-top: 85px;
+}
+
+.photo-credit {
+    position: absolute;
+    top: 1040px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.706);
+    font-size: 12px;
 }
 
 header {
     font-weight: 300;
     background-color: #DFF4FF;
-    border-radius: 3px;
     width: 98%;
     margin: 0 0 40px 0;
     padding: 150px 0 50px 35px;
@@ -75,6 +101,8 @@ input {
     height: 30px;
     padding: 3px;
     margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #46beff40;
 }
 
 input:focus {
@@ -92,7 +120,6 @@ input[type="password"]:invalid {
 
 footer {
     background-color: #DFF4FF;
-    border-radius: 3px;
     width: 98%;
     margin: 20px 0 200px 0;
     padding: 50px 0 228px 35px;
